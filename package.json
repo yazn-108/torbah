@@ -1,0 +1,15 @@
+{
+  "name": "torbah",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dashboardStyle": "tailwindcss -i ./dashboard/src/input.css -o ./dashboard/style.css --watch",
+    "mainStyle": "tailwindcss -i ./src/input.css -o ./style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

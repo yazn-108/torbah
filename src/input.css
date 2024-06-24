@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.notification-tab > .active {
+  @apply text-blue-500 border-b-blue-500 hover:text-blue-500;
+}
+.order-tab > .active {
+  @apply bg-blue-500 text-white hover:text-white;
+}
+.main.active {
+  @apply md:w-full md:ml-0;
+}
+@font-face {
+  font-family: "DGAgnadeen";
+  src: local("DGAgnadeen"), local("DG Agnadeen"),
+    url(./assets/DGAgnadeen-Regular.ttf);
+  font-display: swap;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  font-family: "DGAgnadeen";
+}
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+.menu {
+  &.open {
+    & ul {
+      display: flex;
+    }
+  }
+}
+.it-has-animation {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: all 1.6s;
+}
+.start-animation {
+  visibility: visible;
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
