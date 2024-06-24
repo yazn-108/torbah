@@ -1,7 +1,7 @@
 {
   "name": "torbah",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "dashboardStyle": "tailwindcss -i ./dashboard/src/input.css -o ./dashboard/style.css --watch",
     "mainStyle": "tailwindcss -i ./src/input.css -o ./style.css --watch"
