@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "DGAgnadeen";
+  src: local("DGAgnadeen"), local("DG Agnadeen"),
+    url(./assets/DGAgnadeen-Regular.ttf);
+  font-display: swap;
+}
+html {
+  scrollbar-width: none;
+  font-family: "DGAgnadeen";
+}
